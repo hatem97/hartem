@@ -9,5 +9,5 @@ import org.springframework.stereotype.Service;
 public class LibroService {
     @Autowired
 private LibroRepository repository;
-    public Libro getLibro(Integer id){return repository.findOne(id);}
+public Libro
 }
