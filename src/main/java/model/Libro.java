@@ -1,7 +1,4 @@
 package model;
-
-import org.springframework.boot.test.autoconfigure.data.jdbc.DataJdbcTest;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
