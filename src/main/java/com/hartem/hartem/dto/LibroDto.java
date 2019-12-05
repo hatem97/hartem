@@ -1,4 +1,4 @@
-package dto;
+package com.hartem.hartem.dto;
 
 public class LibroDto {
     private Integer codice;

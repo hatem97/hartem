@@ -1,17 +1,13 @@
-package model;
+package com.hartem.hartem.model;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity(name="Libro")
 public class Libro {
     @Id
-    @GeneratedValue(strategy =GenerationType.IDENTITY)
     private Integer id;
     private String titolo;
     private Integer codice;
-    public Libro(String titolo,Integer codice){this.titolo=titolo;this.codice=codice;}
     public String getTitolo(){
         return titolo;
         }

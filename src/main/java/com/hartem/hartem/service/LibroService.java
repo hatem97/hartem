@@ -1,11 +1,10 @@
-package service;
-import model.Libro;
-import dao.*;
+package com.hartem.hartem.service;
+import com.hartem.hartem.model.Libro;
+import com.hartem.hartem.dao.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import java.util.List;
 
 @Service
 public class LibroService {
@@ -14,8 +13,8 @@ public class LibroService {
 
 public Libro getLibro(Integer id){return repository.getOne(id);}
 public void addLibro(Libro libro){repository.save(libro);}
-public List<Libro> findAll(Libro libro){
-    List<Libro> libro1= new ArrayList<>();
+public ArrayList<Libro> findAll(Libro libro){
+    ArrayList<Libro> libro1= new ArrayList<>();
     libro1.addAll(repository.findAll());
     return libro1;
 }
